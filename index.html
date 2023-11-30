@@ -16,6 +16,7 @@
         position: fixed;
         z-index: 999;
         background-color: var(--brown1);
+        box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
       "
     >
       <div style="display: flex; gap: 1rem; align-items: center">
@@ -30,15 +31,41 @@
         </div>
       </div>
 
-      <div style="display: flex; gap: 1rem">
-        <div>
+      <div style="display: flex; gap: 2rem">
+        <div class="nav-item">
           <span>Home</span>
         </div>
-        <div>
+        <div class="nav-item">
           <span>About PCS</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
         </div>
-        <div>
+        <div class="nav-item">
           <span>Academics</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
         </div>
       </div>
     </nav>
@@ -55,6 +82,22 @@
         gap: 10rem;
       "
     >
+      <img
+        src="images/pcs_background.png"
+        alt="PCS"
+        style="
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+          filter: brightness(75%);
+          opacity: 0.75;
+          z-index: -10;
+        "
+      />
       <div>
         <h1 style="font-size: var(--7xl)">PCS Making Difference</h1>
         <p style="font-size: var(--2xl)">
@@ -87,9 +130,42 @@
           >Follow Us</a
         >
       </div>
+
+      <div
+        style="
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.75) 100%
+          );
+          height: 10rem;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-chevron-down"
+          viewBox="0 0 16 16"
+          style="height: 4rem; width: 4rem"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </div>
     </section>
 
-    <section style="padding: 0 5%">
+    <section style="padding: 5rem 5%">
       <h1 style="font-size: var(--6xl); text-align: center">
         Creating a Brighter Future
       </h1>
@@ -133,7 +209,7 @@
       </p>
     </section>
 
-    <section style="padding: 0 5%">
+    <section style="padding: 5rem 5%">
       <h1 style="font-size: var(--6xl)">
         Explore the Impact of Tailored Learning Experiences
       </h1>
@@ -148,7 +224,7 @@
       </p>
     </section>
 
-    <section style="padding: 0 10%">
+    <section style="padding: 5rem 10%">
       <div>
         <h2 style="font-size: var(--5xl)">Programs</h2>
         <div style="display: flex; gap: 4rem; width: 100%">
@@ -157,11 +233,13 @@
             style="background-image: url(&quot;./images/gradeSchool.webp&quot;)"
           >
             <div class="content">
-              <h3>Grade School</h3>
-              <p>
-                Nurturing learning, character, and life skills for academic and
-                personal success through a dynamic and holistic approach.
-              </p>
+              <div>
+                <h3>Grade School</h3>
+                <p>
+                  Nurturing learning, character, and life skills for academic
+                  and personal success through a dynamic and holistic approach.
+                </p>
+              </div>
 
               <a href="">Learn More</a>
             </div>
@@ -172,11 +250,14 @@
             style="background-image: url(&quot;./images/juniorHigh.webp&quot;)"
           >
             <div class="content">
-              <h3>Junior High</h3>
-              <p>
-                Fostering academic excellence and holistic development through
-                Catholic teachings, creative talents, and social responsibility.
-              </p>
+              <div>
+                <h3>Junior High</h3>
+                <p>
+                  Fostering academic excellence and holistic development through
+                  Catholic teachings, creative talents, and social
+                  responsibility.
+                </p>
+              </div>
               <a href="">Learn More</a>
             </div>
           </div>
@@ -185,22 +266,136 @@
             style="background-image: url(&quot;./images/seniorHigh.webp&quot;)"
           >
             <div class="content">
-              <h3>Senior High</h3>
-              <p>
-                Empowering students for lifelong success through a holistic
-                education that fosters critical thinking, practical skills, and
-                ethical values.
-              </p>
+              <div>
+                <h3>Senior High</h3>
+                <p>
+                  Empowering students for lifelong success through a holistic
+                  education that fosters critical thinking, practical skills,
+                  and ethical values.
+                </p>
+              </div>
               <a href="">Learn More</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div>
-        <h2 style="font-size: var(--5xl)">Latest Events</h2>
-      </div>
+      <!-- <div> -->
+      <!--   <h2 style="font-size: var(--5xl)">Latest Events</h2> -->
+      <!-- </div> -->
     </section>
+
+    <section
+      style="padding: 8rem 5%; background-color: white; position: relative"
+    >
+      <div>
+        <div style="color: black">
+          <h2 style="font-size: var(--5xl)">Be a PCSian Now!</h2>
+          <p style="font-size: var(--lg); width: 50%">
+            Your journey of academic and personal growth begins. Unlock your
+            potential, and delve into a world of endless possibilities that
+            await you at Pateros Catholic School.
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 2rem">
+          <a
+            href="https://schoolaide.pcsian.edu.ph"
+            target="_blank"
+            style="
+              font-size: var(--lg);
+              padding: 0.5rem 1rem;
+              border-radius: 999px;
+              background-color: var(--yellow);
+            "
+            >Apply Now</a
+          >
+          <a
+            href="https://www.facebook.com/PCS.OfficialPage"
+            target="_blank"
+            style="
+              font-size: var(--lg);
+              padding: 0.5rem 1rem;
+              border-radius: 999px;
+              background-color: var(--brown1);
+            "
+            >Follow Us</a
+          >
+        </div>
+      </div>
+
+      <img
+        src="images/pcsAnnex.webp"
+        alt="PCS Annex Building"
+        style="
+          width: 33%;
+          object-fit: cover;
+          position: absolute;
+          bottom: 0;
+          right: 5%;
+        "
+      />
+    </section>
+
+    <footer>
+      <img
+        src="images/pcsLogoNew.webp"
+        alt="PCS logo"
+        style="width: 12rem; height: 12rem"
+      />
+      <div style="display: flex; gap: 2rem">
+        <div style="flex: 1">
+          <h2 style="font-size: var(--4xl); margin-bottom: 2rem">
+            Get in Touch
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 1rem">
+            <div>
+              <a href="mailto:registrar@pcsian.edu.ph"
+                >registrar@pcsian.edu.ph</a
+              >
+            </div>
+            <div>
+              <span>(02) 642 6016 or (02) 636 7274</span>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/PCS.OfficialPage"
+                >Pateros Catholic School Official_Page</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <h3 style="margin-bottom: 0.5rem">Main Building</h3>
+            <div>
+              <span
+                >B. Morcilla St. Pateros, 1620 Metro Manila, Philippines.</span
+              >
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin-bottom: 0.5rem">Annex Building</h3>
+            <div>
+              <span
+                >F. Imson St. Brgy. San Pedro, Pateros, Metro Manila,
+                Philippines.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </footer>
   </body>
 
   <style>
@@ -262,6 +457,12 @@
       position: relative;
     }
 
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
     .card {
       flex: 1;
       height: 28rem;
@@ -287,10 +488,12 @@
       padding: 5rem 1rem 1rem;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
     .card .content h3 {
       font-size: var(--lg);
+      margin-bottom: 0.5rem;
     }
 
     .card .content a {
@@ -300,6 +503,14 @@
       font-weight: bold;
       display: inline-block;
       max-width: fit-content;
+    }
+
+    footer {
+      background-color: var(--brown1);
+      display: flex;
+      align-items: center;
+      padding: 5rem 5%;
+      gap: 5rem;
     }
   </style>
 </html>
