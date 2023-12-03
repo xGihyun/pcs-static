@@ -76,11 +76,10 @@
         width: 100%;
         height: 100svh;
         position: relative;
-        padding: 15rem 5% 5rem;
+        padding: 17.5rem 5% 5rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 10rem;
+        gap: 7.5rem;
       "
     >
       <img
@@ -104,7 +103,9 @@
           style="font-size: var(--7xl); display: flex; flex-direction: column"
         >
           <span style="margin-bottom: -1rem">PCS</span>
-          <span style="color: var(--yellow)">Making Difference</span>
+          <span style="color: var(--yellow); text-transform: uppercase"
+            >Making Difference</span
+          >
         </h1>
         <p style="font-size: var(--2xl); width: 60%">
           A school that provides an enriched learning environment that has
@@ -112,11 +113,12 @@
         </p>
       </div>
 
-      <div style="display: flex; gap: 2rem">
+      <div style="display: flex; gap: 2rem; z-index: 10">
         <a
           href="https://schoolaide.pcsian.edu.ph"
           target="_blank"
           style="border-radius: 999px; background-color: var(--yellow)"
+          class="button-hover cta"
           type="button"
           >Apply Now</a
         >
@@ -124,6 +126,7 @@
           href="https://www.facebook.com/PCS.OfficialPage"
           target="_blank"
           style="border-radius: 999px; background-color: var(--brown1)"
+          class="button-hover cta"
           type="button"
           >Follow Us</a
         >
@@ -144,26 +147,31 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          z-index: 0;
         "
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-chevron-down"
-          viewBox="0 0 16 16"
-          style="height: 4rem; width: 4rem"
+        <a
+          href="#creating-a-brighter-future"
+          class="animate-float"
+          style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5))"
         >
-          <path
-            fill-rule="evenodd"
-            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-          />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="59"
+            height="40"
+            viewBox="0 0 59 40"
+            fill="none"
+          >
+            <path d="M3 3L30.1304 33L55 3" stroke="white" stroke-width="8" />
+          </svg>
+        </a>
       </div>
     </section>
 
-    <section style="padding: 5rem 5%">
+    <section
+      style="padding: 5rem 5% 15rem; position: relative; z-index: 1"
+      id="creating-a-brighter-future"
+    >
       <h1
         style="font-size: var(--6xl); text-align: center; color: var(--yellow)"
       >
@@ -181,32 +189,12 @@
           gap: 4rem;
           justify-content: center;
           margin: 2rem 0;
+          align-items: center;
         "
       >
-        <div
-          style="
-            width: 16rem;
-            height: 16rem;
-            background-color: var(--yellow);
-            border-radius: 999px;
-          "
-        ></div>
-        <div
-          style="
-            width: 16rem;
-            height: 16rem;
-            background-color: var(--yellow);
-            border-radius: 999px;
-          "
-        ></div>
-        <div
-          style="
-            width: 16rem;
-            height: 16rem;
-            background-color: var(--yellow);
-            border-radius: 999px;
-          "
-        ></div>
+        <div class="circle-backdrop"></div>
+        <div class="circle-backdrop" style="width: 20rem; height: 20rem"></div>
+        <div class="circle-backdrop"></div>
       </div>
       <p style="padding: 0 15rem; text-align: center; font-size: var(--lg)">
         Our unique approach to learning enhances our students’ education and
@@ -214,9 +202,32 @@
         Catholic School provides a rich learning environment that has helped
         countless students get ahead.
       </p>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1440"
+        height="298"
+        viewBox="0 0 1440 298"
+        preserveAspectRatio="none"
+        style="position: absolute; bottom: -7.5rem; left: 0; width: 100%"
+      >
+        <path
+          d="M42.2081 78.3771C-173.887 60.2163 -333.19 297 -309.702 297C-286.213 297 1688 296 1688 296C1688 296 1484.41 82.9173 1357.57 78.3771C1230.73 73.837 1249.52 123.779 1094.5 126.049C939.472 128.319 946.518 8.00421 770.353 1.19398C594.189 -5.61624 462.653 169.181 331.117 164.641C199.582 160.1 171.269 89.2235 42.2081 78.3771Z"
+          fill="white"
+          stroke="white"
+        />
+      </svg>
     </section>
 
-    <section style="padding: 5rem 5%; background-color: white; color: black">
+    <section
+      style="
+        padding: 5rem 5%;
+        background-color: white;
+        color: black;
+        z-index: 2;
+        position: relative;
+      "
+    >
       <h1 style="font-size: var(--6xl); margin-bottom: 1rem">
         Explore the Impact of Tailored Learning Experiences
       </h1>
@@ -231,7 +242,7 @@
       </p>
     </section>
 
-    <section style="padding: 5rem 10%">
+    <section style="padding: 5rem 10% 15rem; position: relative">
       <div style="margin-bottom: 5rem" class="programs">
         <h2>Programs</h2>
         <div style="display: flex; gap: 4rem; width: 100%">
@@ -332,10 +343,30 @@
           </div>
         </div>
       </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1440"
+        height="251"
+        viewBox="0 0 1440 251"
+        fill="none"
+        style="position: absolute; bottom: -7.5rem; left: 0; width: 100%"
+      >
+        <path
+          d="M1014 24C1168 -34 1211.05 54.3116 1311.16 54.3116C1411.26 54.3116 1399.42 -25.8642 1560 10C1720.58 45.8642 1722 250.474 1722 250.474L-278 250.477C-278 250.477 -148.617 24 -36 24C76.6173 24 49.4244 95.0626 189.153 95.0626C328.882 95.0626 343.481 37.5717 491.552 42.3536C639.623 47.1355 593.331 123.609 756 126C918.669 128.391 860 82 1014 24Z"
+          fill="white"
+          stroke="white"
+        />
+      </svg>
     </section>
 
     <section
-      style="padding: 8rem 10%; background-color: white; position: relative"
+      style="
+        padding: 8rem 10%;
+        background-color: white;
+        position: relative;
+        z-index: 3;
+      "
     >
       <div>
         <div style="color: black; margin-bottom: 5rem">
@@ -357,6 +388,7 @@
               background-color: var(--brown1);
               border: 2px solid var(--brown1);
             "
+            class="button-hover cta"
             type="button"
             >Apply Now</a
           >
@@ -364,6 +396,7 @@
             href="https://www.facebook.com/PCS.OfficialPage"
             target="_blank"
             style="border: 2px solid var(--brown1); color: var(--brown1)"
+            class="button-hover cta"
             type="button"
             >Follow Us</a
           >
@@ -385,27 +418,99 @@
 
     <footer>
       <div class="footer-content">
-        <img
-          src="images/pcsLogoNew.webp"
-          alt="PCS logo"
-          style="width: 12rem; height: 12rem"
-        />
-        <div style="display: flex; gap: 2rem">
+        <a href="#">
+          <img
+            src="images/pcsLogoNew.webp"
+            alt="PCS logo"
+            style="width: 12rem; height: 12rem"
+          />
+        </a>
+        <div style="display: flex; gap: 2rem; width: 100%">
           <div style="flex: 1">
-            <h2 style="font-size: var(--4xl); margin-bottom: 2rem">
+            <h2 style="font-size: var(--5xl); margin-bottom: 2rem">
               Get in Touch
             </h2>
+
             <div style="display: flex; flex-direction: column; gap: 1rem">
-              <div>
-                <a href="mailto:registrar@pcsian.edu.ph"
+              <div class="contact-container">
+                <a
+                  href="mailto:registrar@pcsian.edu.ph"
+                  style="display: flex; align-items: center"
+                  class="contact-icon"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"
+                    ></path>
+                    <path
+                      d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="mailto:registrar@pcsian.edu.ph" class="contact-text"
                   >registrar@pcsian.edu.ph</a
                 >
               </div>
-              <div>
-                <span>(02) 642 6016 or (02) 636 7274</span>
+              <div class="contact-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="currentColor"
+                  class="contact-icon"
+                >
+                  <g clip-path="url(#clip0_111_150)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.29884 0.894263C3.60505 0.588518 3.97273 0.35134 4.37754 0.198445C4.78234 0.0455508 5.21501 -0.0195684 5.64688 0.00740297C6.07876 0.0343743 6.49997 0.15282 6.8826 0.354892C7.26524 0.556963 7.60056 0.838046 7.86634 1.17951L11.0076 5.21501C11.5833 5.95526 11.7863 6.91951 11.5588 7.82951L10.6016 11.662C10.5521 11.8605 10.5548 12.0684 10.6094 12.2656C10.6639 12.4628 10.7686 12.6425 10.9131 12.7873L15.2128 17.087C15.3578 17.2318 15.5378 17.3366 15.7353 17.3912C15.9328 17.4458 16.1411 17.4483 16.3398 17.3985L20.1706 16.4413C20.6197 16.329 21.0884 16.3203 21.5413 16.4158C21.9943 16.5113 22.4196 16.7085 22.7851 16.9925L26.8206 20.132C28.2713 21.2608 28.4043 23.4045 27.1058 24.7013L25.2963 26.5108C24.0013 27.8058 22.0658 28.3745 20.2616 27.7393C15.6437 26.1144 11.4508 23.4707 7.99409 20.0043C4.52785 16.548 1.88416 12.3558 0.259092 7.73851C-0.374408 5.93601 0.194342 3.99876 1.48934 2.70376L3.29884 0.894263Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_111_150">
+                      <rect width="28" height="28" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="contact-text">(02) 642 6016 or (02) 636 7274</span>
               </div>
-              <div>
-                <a href="https://www.facebook.com/PCS.OfficialPage"
+              <div class="contact-container">
+                <a
+                  href="https://www.facebook.com/PCS.OfficialPage"
+                  class="contact-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                  >
+                    <g clip-path="url(#clip0_111_154)">
+                      <path
+                        d="M28.0001 14.0857C28.0001 6.30525 21.7316 -0.00175476 14.0001 -0.00175476C6.26508 -4.76069e-06 -0.00341797 6.30525 -0.00341797 14.0875C-0.00341797 21.1172 5.11708 26.9447 11.8091 28.0017V18.158H8.25658V14.0875H11.8126V10.9812C11.8126 7.4515 13.9038 5.502 17.1011 5.502C18.6341 5.502 20.2353 5.77675 20.2353 5.77675V9.24174H18.4696C16.7318 9.24174 16.1893 10.3285 16.1893 11.4432V14.0857H20.0708L19.4513 18.1562H16.1876V28C22.8796 26.943 28.0001 21.1155 28.0001 14.0857Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_111_154">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/PCS.OfficialPage"
+                  class="contact-text"
+                  target="_blank"
+                  rel="noreferrer"
                   >Pateros Catholic School Official_Page</a
                 >
               </div>
@@ -422,21 +527,79 @@
           >
             <div>
               <h3 style="margin-bottom: 0.5rem">Main Building</h3>
-              <div>
-                <span
-                  >B. Morcilla St. Pateros, 1620 Metro Manila,
-                  Philippines.</span
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School/@14.544882,121.06508,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c8900303c535:0x83c4ca46850a39b3!8m2!3d14.544882!4d121.067274!16s%2Fg%2F1tfpm6qt?hl=en"
+                  class="contact-icon"
+                  target="_blank"
+                  rel="noreferrer"
                 >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                  >
+                    <g clip-path="url(#clip0_111_159)">
+                      <path
+                        d="M14 28C14 28 24.5 18.0495 24.5 10.5C24.5 7.71523 23.3938 5.04451 21.4246 3.07538C19.4555 1.10625 16.7848 0 14 0C11.2152 0 8.54451 1.10625 6.57538 3.07538C4.60625 5.04451 3.5 7.71523 3.5 10.5C3.5 18.0495 14 28 14 28ZM14 15.75C12.6076 15.75 11.2723 15.1969 10.2877 14.2123C9.30312 13.2277 8.75 11.8924 8.75 10.5C8.75 9.10761 9.30312 7.77226 10.2877 6.78769C11.2723 5.80312 12.6076 5.25 14 5.25C15.3924 5.25 16.7277 5.80312 17.7123 6.78769C18.6969 7.77226 19.25 9.10761 19.25 10.5C19.25 11.8924 18.6969 13.2277 17.7123 14.2123C16.7277 15.1969 15.3924 15.75 14 15.75Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_111_159">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School/@14.544882,121.06508,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c8900303c535:0x83c4ca46850a39b3!8m2!3d14.544882!4d121.067274!16s%2Fg%2F1tfpm6qt?hl=en"
+                  class="contact-text"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  B. Morcilla St. Pateros, 1620 Metro Manila, Philippines.
+                </a>
               </div>
             </div>
 
             <div>
               <h3 style="margin-bottom: 0.5rem">Annex Building</h3>
-              <div>
-                <span
-                  >F. Imson St. Brgy. San Pedro, Pateros, Metro Manila,
-                  Philippines.</span
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School+Senior+High+School/@14.5473356,121.066567,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c89aabff0665:0x8b5a7c61b42ae8ae!8m2!3d14.5473356!4d121.068761!16s%2Fg%2F11c2l8w9c2?hl=en"
+                  class="contact-icon"
+                  target="_blank"
+                  rel="noreferrer"
                 >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                  >
+                    <g clip-path="url(#clip0_111_159)">
+                      <path
+                        d="M14 28C14 28 24.5 18.0495 24.5 10.5C24.5 7.71523 23.3938 5.04451 21.4246 3.07538C19.4555 1.10625 16.7848 0 14 0C11.2152 0 8.54451 1.10625 6.57538 3.07538C4.60625 5.04451 3.5 7.71523 3.5 10.5C3.5 18.0495 14 28 14 28ZM14 15.75C12.6076 15.75 11.2723 15.1969 10.2877 14.2123C9.30312 13.2277 8.75 11.8924 8.75 10.5C8.75 9.10761 9.30312 7.77226 10.2877 6.78769C11.2723 5.80312 12.6076 5.25 14 5.25C15.3924 5.25 16.7277 5.80312 17.7123 6.78769C18.6969 7.77226 19.25 9.10761 19.25 10.5C19.25 11.8924 18.6969 13.2277 17.7123 14.2123C16.7277 15.1969 15.3924 15.75 14 15.75Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_111_159">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School+Senior+High+School/@14.5473356,121.066567,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c89aabff0665:0x8b5a7c61b42ae8ae!8m2!3d14.5473356!4d121.068761!16s%2Fg%2F11c2l8w9c2?hl=en"
+                  class="contact-text"
+                  target="_blank"
+                  rel="noreferrer"
+                  >F. Imson St. Brgy. San Pedro, Pateros, Metro Manila,
+                  Philippines.
+                </a>
               </div>
             </div>
           </div>

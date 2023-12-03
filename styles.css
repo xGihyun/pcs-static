@@ -62,6 +62,10 @@ a {
   gap: 0.5rem;
 }
 
+.nav-item span {
+  font-size: var(--lg);
+}
+
 .card {
   flex: 1;
   height: 28rem;
@@ -170,10 +174,94 @@ footer .footer-content {
   align-items: center;
   gap: 5rem;
   margin-bottom: 5rem;
+  padding: 0 5%;
 }
 
-a[type="button"] {
+.cta {
   font-size: var(--lg);
   padding: 0.75rem 1.125rem;
   border-radius: 999px;
+}
+
+.circle-backdrop {
+  width: 16rem;
+  height: 16rem;
+  background-color: var(--orange);
+  border-radius: 999px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-text {
+  font-size: var(--lg);
+}
+
+.contact-icon {
+  color: var(--yellow);
+}
+
+.contact-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/* Animations */
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button-hover {
+  transition-property: transform, filter;
+  transition-duration: 300ms;
+}
+
+.button-hover:hover {
+  transform: scale(0.9);
+  filter: brightness(90%);
 }
