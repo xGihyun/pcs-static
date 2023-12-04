@@ -20,7 +20,10 @@
         box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
       "
     >
-      <div style="display: flex; gap: 1rem; align-items: center">
+      <a
+        href="index.html"
+        style="display: flex; gap: 1rem; align-items: center"
+      >
         <img
           src="./images/pcsLogoNew.webp"
           alt="PCS logo"
@@ -30,11 +33,11 @@
           <p style="font-size: var(--2xl)">Pateros Catholic School</p>
           <p style="font-size: var(--sm)">Men and Women of Noble Character</p>
         </div>
-      </div>
+      </a>
 
       <div style="display: flex; gap: 2rem">
         <div class="nav-item">
-          <span>Home</span>
+          <a href="index.html">Home</a>
         </div>
         <div class="nav-item">
           <span>About PCS</span>
@@ -137,7 +140,7 @@
           background: linear-gradient(
             180deg,
             rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 0.75) 100%
+            rgba(0, 0, 0, 0.9) 100%
           );
           height: 10rem;
           width: 100%;
@@ -192,9 +195,25 @@
           align-items: center;
         "
       >
-        <div class="circle-backdrop"></div>
-        <div class="circle-backdrop" style="width: 20rem; height: 20rem"></div>
-        <div class="circle-backdrop"></div>
+        <div class="circle-container">
+          <div class="circle-backdrop"></div>
+          <img src="images/confirmation2.webp" alt="" />
+        </div>
+        <div class="circle-container" style="width: 20rem; height: 20rem">
+          <div
+            class="circle-backdrop"
+            style="width: 20rem; height: 20rem"
+          ></div>
+          <img
+            src="images/dagitab.webp"
+            alt=""
+            style="width: 20rem; height: 20rem"
+          />
+        </div>
+        <div class="circle-container">
+          <div class="circle-backdrop"></div>
+          <img src="images/bsp.webp" alt="" />
+        </div>
       </div>
       <p style="padding: 0 15rem; text-align: center; font-size: var(--lg)">
         Our unique approach to learning enhances our students’ education and
@@ -232,14 +251,18 @@
         Explore the Impact of Tailored Learning Experiences
       </h1>
 
-      <p style="font-size: var(--lg); width: 50%">
-        At Pateros Catholic School, we offer a comprehensive educational
-        experience for students in grades K-12. Our academic programs are
-        designed to provide a strong foundation for our students and help them
-        reach their full potential. With our commitment to academic excellence,
-        personalized learning, and a supportive community, our academic programs
-        provide an exceptional educational experience for all students.
-      </p>
+      <div style="position: relative; padding-left: 1.5rem">
+        <span class="line"></span>
+        <p style="font-size: var(--lg); width: 50%">
+          At Pateros Catholic School, we offer a comprehensive educational
+          experience for students in grades K-12. Our academic programs are
+          designed to provide a strong foundation for our students and help them
+          reach their full potential. With our commitment to academic
+          excellence, personalized learning, and a supportive community, our
+          academic programs provide an exceptional educational experience for
+          all students.
+        </p>
+      </div>
     </section>
 
     <section style="padding: 5rem 10% 15rem; position: relative">
@@ -350,7 +373,7 @@
         height="251"
         viewBox="0 0 1440 251"
         fill="none"
-        style="position: absolute; bottom: -7.5rem; left: 0; width: 100%"
+        style="position: absolute; bottom: -5rem; left: 0; width: 100%"
       >
         <path
           d="M1014 24C1168 -34 1211.05 54.3116 1311.16 54.3116C1411.26 54.3116 1399.42 -25.8642 1560 10C1720.58 45.8642 1722 250.474 1722 250.474L-278 250.477C-278 250.477 -148.617 24 -36 24C76.6173 24 49.4244 95.0626 189.153 95.0626C328.882 95.0626 343.481 37.5717 491.552 42.3536C639.623 47.1355 593.331 123.609 756 126C918.669 128.391 860 82 1014 24Z"
@@ -373,11 +396,14 @@
           <h2 style="font-size: var(--5xl); margin-bottom: 1rem">
             Be a PCSian Now!
           </h2>
-          <p style="font-size: var(--2xl); width: 50%">
-            Your journey of academic and personal growth begins. Unlock your
-            potential, and delve into a world of endless possibilities that
-            await you at Pateros Catholic School.
-          </p>
+          <div style="position: relative; padding-left: 1.5rem">
+            <span class="line"></span>
+            <p style="font-size: var(--2xl); width: 50%">
+              Your journey of academic and personal growth begins. Unlock your
+              potential, and delve into a world of endless possibilities that
+              await you at Pateros Catholic School.
+            </p>
+          </div>
         </div>
 
         <div style="display: flex; gap: 2rem">
@@ -418,7 +444,7 @@
 
     <footer>
       <div class="footer-content">
-        <a href="#">
+        <a href="#" class="button-hover">
           <img
             src="images/pcsLogoNew.webp"
             alt="PCS logo"
@@ -436,7 +462,7 @@
                 <a
                   href="mailto:registrar@pcsian.edu.ph"
                   style="display: flex; align-items: center"
-                  class="contact-icon"
+                  class="contact-icon dim-hover"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -453,7 +479,9 @@
                     ></path>
                   </svg>
                 </a>
-                <a href="mailto:registrar@pcsian.edu.ph" class="contact-text"
+                <a
+                  href="mailto:registrar@pcsian.edu.ph"
+                  class="contact-text dim-hover"
                   >registrar@pcsian.edu.ph</a
                 >
               </div>

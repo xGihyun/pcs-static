@@ -62,6 +62,7 @@ a {
   gap: 0.5rem;
 }
 
+.nav-item a,
 .nav-item span {
   font-size: var(--lg);
 }
@@ -74,6 +75,7 @@ a {
   object-fit: cover;
   border-radius: 1rem;
   overflow: hidden;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.75));
 }
 
 .card .content {
@@ -188,6 +190,23 @@ footer .footer-content {
   height: 16rem;
   background-color: var(--orange);
   border-radius: 999px;
+  position: absolute;
+  left: 6px;
+}
+
+.circle-container {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+}
+
+.circle-container img {
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 999px;
+  position: absolute;
+  left: -6px;
 }
 
 .contact-container {
@@ -207,6 +226,35 @@ footer .footer-content {
 .contact-icon svg {
   width: 1.75rem;
   height: 1.75rem;
+}
+
+.button-hover {
+  transition-property: transform, filter;
+  transition-duration: 300ms;
+}
+
+.button-hover:hover {
+  transform: scale(0.9);
+  filter: brightness(90%);
+}
+
+.dim-hover {
+  transition-property: filter;
+  transition-duration: 300ms;
+}
+
+.dim-hover:hover {
+  filter: brightness(75%);
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--yellow);
+  width: 0.5rem;
+  border-radius: 999px;
 }
 
 /* Animations */
@@ -254,14 +302,4 @@ footer .footer-content {
   100% {
     transform: translateY(0);
   }
-}
-
-.button-hover {
-  transition-property: transform, filter;
-  transition-duration: 300ms;
-}
-
-.button-hover:hover {
-  transform: scale(0.9);
-  filter: brightness(90%);
 }
