@@ -1,0 +1,655 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="PCS Website" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="images/pcsLogoNew.webp" />
+    <title>Pateros Catholic School</title>
+  </head>
+
+  <body>
+    <nav>
+      <a
+        href="index.html"
+        style="display: flex; gap: 1rem; align-items: center"
+      >
+        <img
+          src="./images/pcsLogoNew.webp"
+          alt="PCS logo"
+          style="height: 4.5rem; width: 4.5rem"
+        />
+        <div class="logo-name">
+          <p style="font-size: var(--2xl)">Pateros Catholic School</p>
+          <p style="font-size: var(--sm)">Men and Women of Noble Character</p>
+        </div>
+      </a>
+
+      <input type="checkbox" name="hamburger" id="hamburger-checkbox" />
+
+      <label for="hamburger-checkbox" class="hamburger-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </label>
+
+      <ul class="nav-item-container-mobile">
+        <li>
+          <a href="index.html" class="item">Home</a>
+
+          <div>
+            <input type="checkbox" name="about-checkbox" id="about-checkbox" />
+            <label for="about-checkbox" class="about-btn item">
+              <span>About PCS</span>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </label>
+
+            <ul class="about dropdown">
+              <li>
+                <a href="history.html">History</a>
+              </li>
+              <li>
+                <a href="philosophy.html">Philosophy, Vision, & Mission</a>
+              </li>
+              <li>
+                <a href="institutional_directions.html"
+                  >Institutional Directions</a
+                >
+              </li>
+              <li>
+                <a href="services_and_facilities.html">Services & Facilities</a>
+              </li>
+              <li>
+                <a href="paascu.html">PAASCU Accreditation</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="about-checkbox"
+              id="academics-checkbox"
+            />
+            <label for="academics-checkbox" class="academics-btn item">
+              <span>Academics</span>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </label>
+
+            <ul class="academics dropdown">
+              <li>
+                <a href="grade_school.html">Grade School</a>
+              </li>
+              <li>
+                <a href="junior_high.html">Junior High</a>
+              </li>
+              <li>
+                <a href="senior_high.html">Senior High</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="nav-item-container">
+        <div class="nav-backdrop"></div>
+        <div class="nav-item">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-item dropdown">
+          <span>About PCS</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+
+          <div class="dropdown">
+            <ul>
+              <li>
+                <a href="history.html">History</a>
+              </li>
+              <li>
+                <a href="philosophy.html">Philosophy, Vision, & Mission</a>
+              </li>
+              <li>
+                <a href="institutional_directions.html"
+                  >Institutional Directions</a
+                >
+              </li>
+              <li>
+                <a href="services_and_facilities.html">Services & Facilities</a>
+              </li>
+              <li>
+                <a href="paascu.html">PAASCU Accreditation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav-item dropdown">
+          <!-- <a href="grade_school.html">Grade School</a> -->
+          <!-- <a href="junior_high.html">Junior High</a> -->
+          <span>Academics</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+
+          <div class="dropdown">
+            <ul>
+              <li>
+                <a href="grade_school.html">Grade School</a>
+              </li>
+              <li>
+                <a href="junior_high.html">Junior High</a>
+              </li>
+              <li>
+                <a href="senior_high.html">Senior High</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <img src="images/pcs_background.png" alt="PCS" />
+
+      <div>
+        <h2>About</h2>
+        <h1>Services & Facilities</h1>
+      </div>
+    </header>
+
+    <main id="services-and-facilities">
+      <div class="circle-backdrop-tan" style="right: -24rem; top: -20rem"></div>
+      <div
+        class="circle-backdrop-tan"
+        style="left: -20rem; bottom: -40rem"
+      ></div>
+
+      <div class="content">
+        <h2>Services & Facilities</h2>
+        <ol>
+          <li>
+            <h3>Evangelization and Christian Formation Services</h3>
+            <p>
+              PCS aspires to develop integrally formed pupils and students in
+              the person of Christ who will become responsible Catholics. Thus,
+              it focuses on the holistic development of human life by
+              experiencing a true Christian community. It is for this reason
+              that the Center for Christian Formation (CCF) recognizes the need
+              to strengthen Religion as the core of the curriculum to be a
+              potent means of evangelization and Christian formation.
+            </p>
+          </li>
+          <li>
+            <h3>Guidance and Counseling Services</h3>
+            <p>
+              The Guidance and Counseling Offices in both departments monitor
+              the academic and behavioral performance of pupils. The Guidance
+              Counselors provide counseling to both parents and pupils on
+              instructional and behavioral concerns. The offices administer
+              diagnostic, achievement, and other specialized tests to all
+              learners. Information and orientation highlights are also provided
+              to new students and parents regarding the school's ongoing
+              thrusts, institutional policies, and departmental curricular
+              programs.
+            </p>
+          </li>
+          <li>
+            <h3>Prefect of Students Services</h3>
+            <p>
+              The Office of the Prefect of Students (OPS) deals with referred
+              cases of misbehavior and other disciplinary problems of young
+              children and teens. It undertakes initial investigation of cases
+              referred and keeps records of cases for future reference. It
+              monitors attendance and other policy requirements. It also issues
+              exit slips to students with health problems and grants them
+              admission following proper school procedures.
+            </p>
+          </li>
+          <li>
+            <h3>Library and Instructional Media Services</h3>
+            <p>
+              The Instructional Media Center or Library serves the intellectual
+              and research activities of pupils, students, and faculty. They are
+              encouraged to avail of its services on assigned dates by following
+              rules and regulations in borrowing, handling, and returning books
+              and other reference materials. An annual Book Fair is held where
+              pupils can avail of educational and interactive materials such as
+              books, magazines, toys, games, and related items. Book exhibits
+              are also sponsored to stimulate interest and utilization of new
+              book acquisitions.
+            </p>
+          </li>
+          <li>
+            <h3>Medical and Dental Services</h3>
+            <p>
+              The School Clinic checks the medical and dental concerns of
+              pupils, students, and personnel. A doctor and a dentist are always
+              on hand to provide regular and periodic physical examination to
+              pupils and students. They are ably assisted by nursing staffs who
+              administer first aid to our clientele.
+            </p>
+          </li>
+          <li>
+            <h3>Registrar and Students' Records Services</h3>
+            <p>
+              The Registrar's Office keeps track of students' records and
+              prepares all communications concerning school credentials of
+              pupils and students. The Registrar supervises the building and
+              storage retrieval, as well as the safety and confidentiality of
+              student records.
+            </p>
+          </li>
+          <li>
+            <h3>Information Technology Services</h3>
+            <p>
+              The Management Information System Office provides the central
+              information technology operations of the school. M.I.S. Office
+              helps identify, select and evaluate technology solutions that will
+              improve overall effectiveness and efficiency of school operations.
+            </p>
+          </li>
+          <li>
+            <h3>Promotions and Publications</h3>
+            <p>
+              The PPO supervises and coordinates the technical and operational
+              detail of the School Annual, PCS Official Facebook Page, Alumni
+              Page, School Website, and responsible for the publication and
+              periodicals which the school may wish to publish. It is also
+              in-charge of the facilitation of certificates, tarpaulin,
+              billboard announcements and the like.
+            </p>
+          </li>
+          <li>
+            <h3>Physical Plant and Maintenance Services</h3>
+            <p>
+              The Physical Plant Administrator oversees the general technical
+              supervision of the school plant and property, and monitors the
+              structural condition of all the facilities.
+            </p>
+          </li>
+          <li>
+            <h3>Custodial Services</h3>
+            <p>
+              The Custodial Head supervises the utility personnel in maintaining
+              the over-all cleanliness and orderliness of the school
+              surroundings.
+            </p>
+          </li>
+          <li>
+            <h3>Security Services</h3>
+            <p>
+              An upgraded and state-of-the-art surveillance system placed on
+              strategic locations of the campus with round-the-clock monitoring
+              viewed via internet.
+            </p>
+          </li>
+          <li>
+            <h3>Dining and Food Services</h3>
+            <p>
+              The PCS Canteen helps provide affordable and well-balanced meals
+              and nutritious snacks to the school community.
+            </p>
+          </li>
+          <li>
+            <h3>Public Address System</h3>
+            <p>
+              Strategic locations in entrances, exits, hallways, common areas,
+              and major offices are installed with a large number of speakers in
+              order to distribute and disseminate a message to the general
+              public around the school campus. The major purpose is to read
+              announcements or declare states of emergency.
+            </p>
+          </li>
+          <li>
+            <h3>Computer Laboratories</h3>
+            <p>
+              This facility enables the Grade School pupils and the High School
+              students to develop skills and creativity in utilizing the
+              different softwares used in computer education. The Laboratory
+              provides hands-on experience on computer operations where they can
+              operate by themselves in producing school requirements.
+            </p>
+          </li>
+          <li>
+            <h3>Science Laboratories</h3>
+            <p>
+              The Science teachers were able to develop their personally
+              designed laboratory experiments and activities which they think
+              will suit the needs and level of interest of the students. Some of
+              these activities are used as motivation for getting the attention
+              and interest of the students, especially in opening a new
+              topic/concept in Science. Most of these activities/experiments
+              make use of familiar or common materials in order for students to
+              realize their importance in daily life activities. These also help
+              the students be aware of some chemicals inside or outside the
+              environment. The experiments are also designed to suggest further
+              studies and experiments on similar concepts. Thereby, the
+              analytical and scientific thinking skills of the students are
+              developed. These could also help them realize the career they may
+              want to pursue in the future.
+            </p>
+          </li>
+          <li>
+            <h3>Technology and Livelihood Laboratories</h3>
+            <p>
+              The Technology and Livelihood Economics (TLE) Laboratory aims to
+              increase students' capacity for social orientedness through
+              knowledge and experience of various occupational opportunities and
+              the development of occupational skills and proficiency. The
+              laboratory also develops the ability to create new, artistic or
+              useful things out of simple, inexpensive, ordinary, raw and local
+              materials. The students can also develop personal and communal
+              potential, e.g., sense of responsibility, leadership and team
+              work, appreciation for work, and work values, spirit of generosity
+              and service.
+            </p>
+          </li>
+          <li>
+            <h3>Audio Visual Room (Mary Seat of Wisdom Hall)</h3>
+            <p>
+              A multi-purpose hall equipped with multimedia and LCD projectors
+              that serve as viewing and venue for extra class activities,
+              meetings, demonstrations, programs and recollections. The Parish
+              community and other schools can also avail the use of this
+              facility through proper permission and clearance from the school
+              administration in-charge.
+            </p>
+          </li>
+          <li>
+            <h3>Gymnasium</h3>
+            <p>
+              The multi-gym is located at the 5th floor of Sta. Marta building
+              where academic, spiritual and recreational activities are held.
+            </p>
+          </li>
+          <li>
+            <h3>Azotea de Teresita</h3>
+            <p>
+              A vista of coolness, Azotea de Teresita adds beauty and grace to
+              the school grounds which serves as an interactive venue for
+              student activities, meetings, conferences, and programs.
+            </p>
+          </li>
+          <li>
+            <h3>Quadrangle</h3>
+            <p>
+              The construction of the tensile fabric structure in the quadrangle
+              ensured the PCS community a roof under the heat of the sun and the
+              drizzle of the rain for socio-cultural, physical and religious
+              activities of the school.
+            </p>
+          </li>
+          <li>
+            <h3>Comfort Rooms</h3>
+            <p>
+              Comfort Rooms of both the Grade School and the High School
+              Departments are strategically located in the different floors of
+              the buildings to provide the school constituents a clean and
+              sanitary area for personal comfort and necessities.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <a href="#" class="button-hover">
+          <img
+            src="images/pcsLogoNew.webp"
+            alt="PCS logo"
+            style="width: 12rem; height: 12rem"
+          />
+        </a>
+        <div class="details">
+          <div style="flex: 1">
+            <h2 style="font-size: var(--5xl); margin-bottom: 2rem">
+              Get in Touch
+            </h2>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem">
+              <div class="contact-container">
+                <a
+                  href="mailto:registrar@pcsian.edu.ph"
+                  style="display: flex; align-items: center"
+                  class="contact-icon dim-hover"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"
+                    ></path>
+                    <path
+                      d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="mailto:registrar@pcsian.edu.ph"
+                  class="contact-text dim-hover"
+                  >registrar@pcsian.edu.ph</a
+                >
+              </div>
+              <div class="contact-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="currentColor"
+                  class="contact-icon"
+                >
+                  <g clip-path="url(#clip0_111_150)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.29884 0.894263C3.60505 0.588518 3.97273 0.35134 4.37754 0.198445C4.78234 0.0455508 5.21501 -0.0195684 5.64688 0.00740297C6.07876 0.0343743 6.49997 0.15282 6.8826 0.354892C7.26524 0.556963 7.60056 0.838046 7.86634 1.17951L11.0076 5.21501C11.5833 5.95526 11.7863 6.91951 11.5588 7.82951L10.6016 11.662C10.5521 11.8605 10.5548 12.0684 10.6094 12.2656C10.6639 12.4628 10.7686 12.6425 10.9131 12.7873L15.2128 17.087C15.3578 17.2318 15.5378 17.3366 15.7353 17.3912C15.9328 17.4458 16.1411 17.4483 16.3398 17.3985L20.1706 16.4413C20.6197 16.329 21.0884 16.3203 21.5413 16.4158C21.9943 16.5113 22.4196 16.7085 22.7851 16.9925L26.8206 20.132C28.2713 21.2608 28.4043 23.4045 27.1058 24.7013L25.2963 26.5108C24.0013 27.8058 22.0658 28.3745 20.2616 27.7393C15.6437 26.1144 11.4508 23.4707 7.99409 20.0043C4.52785 16.548 1.88416 12.3558 0.259092 7.73851C-0.374408 5.93601 0.194342 3.99876 1.48934 2.70376L3.29884 0.894263Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_111_150">
+                      <rect width="28" height="28" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="contact-text">(02) 642 6016 or (02) 636 7274</span>
+              </div>
+              <div class="contact-container">
+                <a
+                  href="https://www.facebook.com/PCS.OfficialPage"
+                  class="contact-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                  >
+                    <g clip-path="url(#clip0_111_154)">
+                      <path
+                        d="M28.0001 14.0857C28.0001 6.30525 21.7316 -0.00175476 14.0001 -0.00175476C6.26508 -4.76069e-06 -0.00341797 6.30525 -0.00341797 14.0875C-0.00341797 21.1172 5.11708 26.9447 11.8091 28.0017V18.158H8.25658V14.0875H11.8126V10.9812C11.8126 7.4515 13.9038 5.502 17.1011 5.502C18.6341 5.502 20.2353 5.77675 20.2353 5.77675V9.24174H18.4696C16.7318 9.24174 16.1893 10.3285 16.1893 11.4432V14.0857H20.0708L19.4513 18.1562H16.1876V28C22.8796 26.943 28.0001 21.1155 28.0001 14.0857Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_111_154">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/PCS.OfficialPage"
+                  class="contact-text"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Pateros Catholic School Official_Page</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              gap: 1rem;
+            "
+          >
+            <div>
+              <h3 style="margin-bottom: 0.5rem">Main Building</h3>
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School/@14.544882,121.06508,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c8900303c535:0x83c4ca46850a39b3!8m2!3d14.544882!4d121.067274!16s%2Fg%2F1tfpm6qt?hl=en"
+                  class="contact-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                  >
+                    <g clip-path="url(#clip0_111_159)">
+                      <path
+                        d="M14 28C14 28 24.5 18.0495 24.5 10.5C24.5 7.71523 23.3938 5.04451 21.4246 3.07538C19.4555 1.10625 16.7848 0 14 0C11.2152 0 8.54451 1.10625 6.57538 3.07538C4.60625 5.04451 3.5 7.71523 3.5 10.5C3.5 18.0495 14 28 14 28ZM14 15.75C12.6076 15.75 11.2723 15.1969 10.2877 14.2123C9.30312 13.2277 8.75 11.8924 8.75 10.5C8.75 9.10761 9.30312 7.77226 10.2877 6.78769C11.2723 5.80312 12.6076 5.25 14 5.25C15.3924 5.25 16.7277 5.80312 17.7123 6.78769C18.6969 7.77226 19.25 9.10761 19.25 10.5C19.25 11.8924 18.6969 13.2277 17.7123 14.2123C16.7277 15.1969 15.3924 15.75 14 15.75Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_111_159">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School/@14.544882,121.06508,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c8900303c535:0x83c4ca46850a39b3!8m2!3d14.544882!4d121.067274!16s%2Fg%2F1tfpm6qt?hl=en"
+                  class="contact-text"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  B. Morcilla St. Pateros, 1620 Metro Manila, Philippines.
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h3 style="margin-bottom: 0.5rem">Annex Building</h3>
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School+Senior+High+School/@14.5473356,121.066567,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c89aabff0665:0x8b5a7c61b42ae8ae!8m2!3d14.5473356!4d121.068761!16s%2Fg%2F11c2l8w9c2?hl=en"
+                  class="contact-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="currentColor"
+                  >
+                    <g clip-path="url(#clip0_111_159)">
+                      <path
+                        d="M14 28C14 28 24.5 18.0495 24.5 10.5C24.5 7.71523 23.3938 5.04451 21.4246 3.07538C19.4555 1.10625 16.7848 0 14 0C11.2152 0 8.54451 1.10625 6.57538 3.07538C4.60625 5.04451 3.5 7.71523 3.5 10.5C3.5 18.0495 14 28 14 28ZM14 15.75C12.6076 15.75 11.2723 15.1969 10.2877 14.2123C9.30312 13.2277 8.75 11.8924 8.75 10.5C8.75 9.10761 9.30312 7.77226 10.2877 6.78769C11.2723 5.80312 12.6076 5.25 14 5.25C15.3924 5.25 16.7277 5.80312 17.7123 6.78769C18.6969 7.77226 19.25 9.10761 19.25 10.5C19.25 11.8924 18.6969 13.2277 17.7123 14.2123C16.7277 15.1969 15.3924 15.75 14 15.75Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_111_159">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Pateros+Catholic+School+Senior+High+School/@14.5473356,121.066567,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c89aabff0665:0x8b5a7c61b42ae8ae!8m2!3d14.5473356!4d121.068761!16s%2Fg%2F11c2l8w9c2?hl=en"
+                  class="contact-text"
+                  target="_blank"
+                  rel="noreferrer"
+                  >F. Imson St. Brgy. San Pedro, Pateros, Metro Manila,
+                  Philippines.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr style="width: 100%; opacity: 0.25" />
+
+      <p style="text-align: center">
+        © 2023. Pateros Catholic School, Pateros, Metro Manila. All Rights
+        Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

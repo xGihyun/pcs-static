@@ -36,7 +36,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 header {
@@ -45,6 +45,7 @@ header {
   display: flex;
   align-items: center;
   padding: 5.5rem 5% 0;
+  z-index: 16;
 }
 
 header img {
@@ -81,8 +82,15 @@ main {
 }
 
 main p,
-main h2 {
+main h2,
+main span,
+main h3,
+main li {
   color: black;
+}
+
+main li:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 main h2 {
@@ -358,7 +366,29 @@ nav label {
 
 section,
 main {
-  overflow-x: clip;
+  overflow: clip;
+}
+
+main .content {
+  max-width: var(--screen-lg);
+  margin: auto;
+}
+
+#history p,
+#philosophy p {
+  text-align: justify;
+}
+
+main h2 {
+  text-align: center;
+}
+
+#philosophy ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+#philosophy .content div:not(:last-child) {
+  margin-bottom: 4rem;
 }
 
 .nav-item.dropdown .dropdown:hover {
@@ -906,6 +936,19 @@ footer .footer-content .details {
   footer span,
   .contact-text {
     font-size: var(--nm);
+  }
+
+  header h2 {
+    font-size: var(--xl);
+  }
+
+  header h1 {
+    font-size: var(--4xl);
+  }
+
+  main p {
+    font-size: var(--nm);
+    line-height: 1.5rem;
   }
 }
 
