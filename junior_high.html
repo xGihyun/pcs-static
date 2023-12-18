@@ -20,13 +20,115 @@
           alt="PCS logo"
           style="height: 4.5rem; width: 4.5rem"
         />
-        <div>
+        <div class="logo-name">
           <p style="font-size: var(--2xl)">Pateros Catholic School</p>
           <p style="font-size: var(--sm)">Men and Women of Noble Character</p>
         </div>
       </a>
 
+      <input type="checkbox" name="hamburger" id="hamburger-checkbox" />
+
+      <label for="hamburger-checkbox" class="hamburger-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </label>
+
+      <ul class="nav-item-container-mobile">
+        <li>
+          <a href="index.html" class="item">Home</a>
+
+          <div>
+            <input type="checkbox" name="about-checkbox" id="about-checkbox" />
+            <label for="about-checkbox" class="about-btn item">
+              <span>About PCS</span>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </label>
+
+            <ul class="about dropdown">
+              <li>
+                <a href="history.html">History</a>
+              </li>
+              <li>
+                <a href="philosophy.html">Philosophy, Vision, & Mission</a>
+              </li>
+              <li>
+                <a href="institutional_directions.html"
+                  >Institutional Directions</a
+                >
+              </li>
+              <li>
+                <a href="services_and_facilities.html">Services & Facilities</a>
+              </li>
+              <li>
+                <a href="paascu.html">PAASCU Accreditation</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="about-checkbox"
+              id="academics-checkbox"
+            />
+            <label for="academics-checkbox" class="academics-btn item">
+              <span>Academics</span>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </label>
+
+            <ul class="academics dropdown">
+              <li>
+                <a href="grade_school.html">Grade School</a>
+              </li>
+              <li>
+                <a href="junior_high.html">Junior High</a>
+              </li>
+              <li>
+                <a href="senior_high.html">Senior High</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
       <div class="nav-item-container">
+        <div class="nav-backdrop"></div>
         <div class="nav-item">
           <a href="index.html">Home</a>
         </div>
@@ -46,6 +148,28 @@
               d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
             />
           </svg>
+
+          <div class="dropdown">
+            <ul>
+              <li>
+                <a href="history.html">History</a>
+              </li>
+              <li>
+                <a href="philosophy.html">Philosophy, Vision, & Mission</a>
+              </li>
+              <li>
+                <a href="institutional_directions.html"
+                  >Institutional Directions</a
+                >
+              </li>
+              <li>
+                <a href="services_and_facilities.html">Services & Facilities</a>
+              </li>
+              <li>
+                <a href="paascu.html">PAASCU Accreditation</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="nav-item dropdown">
@@ -179,7 +303,7 @@
             style="width: 12rem; height: 12rem"
           />
         </a>
-        <div style="display: flex; gap: 2rem; width: 100%">
+        <div class="details">
           <div style="flex: 1">
             <h2 style="font-size: var(--5xl); margin-bottom: 2rem">
               Get in Touch
@@ -279,6 +403,7 @@
               display: flex;
               flex-direction: column;
               justify-content: space-between;
+              gap: 1rem;
             "
           >
             <div>
