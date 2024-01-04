@@ -1,0 +1,170 @@
+@import url("loader.css");
+
+@media (max-width: 1280px) {
+  .programs .container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero h1 {
+    font-size: var(--5xl);
+  }
+
+  #hero p,
+  footer p {
+    font-size: var(--lg);
+  }
+
+  #before-footer p {
+    font-size: var(--lg);
+    width: 100%;
+  }
+
+  .programs .container {
+    flex-direction: column;
+  }
+
+  .events .container {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: auto;
+  }
+
+  #before-footer img {
+    display: none;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+  }
+
+  footer .footer-content .details {
+    flex-direction: column;
+  }
+
+  section h1 {
+    font-size: var(--4xl);
+  }
+
+  #creating-a-brighter-future p {
+    font-size: var(--nm);
+  }
+
+  #explore p {
+    width: 100%;
+  }
+
+  #explore h1 {
+    margin-bottom: 1rem;
+  }
+
+  .programs h2,
+  .events h2 {
+    font-size: var(--4xl);
+  }
+
+  .card {
+    max-width: 24rem;
+    width: 100%;
+    height: 24rem;
+  }
+
+  .programs .container,
+  .events .container {
+    align-items: center;
+  }
+
+  .wave {
+    min-width: var(--screen-lg);
+  }
+
+  .department img {
+    display: none;
+  }
+
+  .department .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo-name {
+    display: none;
+  }
+
+  .nav-item-container {
+    display: none;
+  }
+
+  .image-circle {
+    flex-direction: column;
+  }
+
+  .cta {
+    font-size: var(--nm);
+    padding: 0.5rem 0.875rem;
+  }
+
+  .card .content p {
+    font-size: var(--sm);
+  }
+
+  .card .content a {
+    font-size: var(--sm);
+    padding: 0.375rem 0.875rem;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  footer a,
+  footer p,
+  footer span,
+  .contact-text {
+    font-size: var(--nm);
+  }
+
+  header h2 {
+    font-size: var(--xl);
+  }
+
+  header h1 {
+    font-size: var(--4xl);
+  }
+
+  main p {
+    font-size: var(--nm);
+    line-height: 1.5rem;
+  }
+
+  .scaler {
+    scale: 0.75;
+  }
+}
+
+@media (max-width: 640px) {
+  #hero h1 {
+    font-size: var(--4xl);
+  }
+
+  #hero p {
+    font-size: var(--nm);
+    width: 100%;
+  }
+
+  #creating-a-brighter-future p {
+    font-size: var(--nm);
+  }
+
+  #before-footer h2 {
+    font-size: var(--4xl);
+  }
+
+  .scroll-down svg {
+    transform: scale(0.8);
+  }
+}

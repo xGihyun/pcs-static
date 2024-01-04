@@ -4,12 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="PCS Website" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/loader.css" />
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
     <link rel="icon" href="images/pcsLogoNew.webp" />
+    <script src="script.js" defer></script>
     <title>Pateros Catholic School</title>
   </head>
 
   <body>
+    <div class="loader-container">
+      <div class="loader-logo-container">
+        <div class="scaler">
+          <div class="circle-1 circle">
+            <div class="circle-2 circle">
+              <div class="circle-3 circle">
+                <img
+                  draggable="false"
+                  src="images/logoCandleBook.webp"
+                  class="logo-candle-book"
+                  alt="Logo Candle & Book"
+                />
+                <img
+                  draggable="false"
+                  src="images/logoLeaf.webp"
+                  class="logo-leaf"
+                  alt="Logo Leaf"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="loader-fade"></div>
+    </div>
+
     <nav>
       <a
         href="index.html"
@@ -128,7 +158,6 @@
       </ul>
 
       <div class="nav-item-container">
-        <div class="nav-backdrop"></div>
         <div class="nav-item">
           <a href="index.html">Home</a>
         </div>
@@ -204,6 +233,8 @@
             </ul>
           </div>
         </div>
+
+        <div class="nav-backdrop"></div>
       </div>
     </nav>
 
