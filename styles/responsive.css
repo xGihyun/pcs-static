@@ -4,6 +4,28 @@
   .programs .container {
     gap: 2rem;
   }
+
+  #senior-high .strands {
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
+  }
+
+  #explore .content .images {
+    display: none;
+  }
+
+  #explore h1,
+  #explore p {
+    text-align: start;
+  }
+
+  #explore .content .text {
+    padding-left: 1.5rem;
+  }
+
+  .line.right {
+    right: auto;
+    left: 0;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -12,8 +34,11 @@
   }
 
   #hero p,
-  footer p {
+  footer p,
+  #before-footer p,
+  #explore p {
     font-size: var(--lg);
+    line-height: 1.75rem;
   }
 
   #before-footer p {
@@ -91,6 +116,16 @@
 }
 
 @media (max-width: 768px) {
+  section h1,
+  #before-footer h2 {
+    font-size: var(--2xl);
+  }
+
+  .programs h2,
+  .events h2 {
+    font-size: var(--xl);
+  }
+
   nav .logo-name {
     display: none;
   }
@@ -144,6 +179,19 @@
   .scaler {
     scale: 0.75;
   }
+
+  #senior-high .strand .text h3 {
+    color: white;
+    font-size: var(--nm);
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #senior-high .strand .text p {
+    color: var(--muted);
+    font-size: var(--sm);
+    line-height: 1.25rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -160,11 +208,23 @@
     font-size: var(--nm);
   }
 
-  #before-footer h2 {
-    font-size: var(--4xl);
-  }
-
   .scroll-down svg {
     transform: scale(0.8);
+  }
+
+  .strand {
+    flex-direction: column;
+  }
+
+  #senior-high .strand .logo {
+    justify-content: center;
+  }
+
+  #senior-high .strands .strand:nth-child(odd) .logo {
+    background: linear-gradient(to top, var(--yellow), transparent);
+  }
+
+  #senior-high .strands .strand:nth-child(even) .logo {
+    background: linear-gradient(to top, var(--orange), transparent);
   }
 }

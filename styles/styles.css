@@ -2,6 +2,7 @@
 
 :root {
   --white: #fff;
+  --muted: rgba(150, 150, 150);
   --black: #000;
   --brown0: #1b0800;
   --brown1: #2e201a;
@@ -30,6 +31,39 @@
   --screen-lg: 1024px;
   --screen-xl: 1280px;
   --screen-2xl: 1536px;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: merriweather;
+  src: url("../fonts/merriweather/Merriweather-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: merriweather-bold;
+  src: url("../fonts/merriweather/Merriweather-Bold.ttf");
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: merriweather-bold;
+}
+
+p,
+a,
+span {
+  font-family: roboto, sans-serif;
 }
 
 *,
@@ -230,13 +264,50 @@ section h1 {
 }
 
 #explore p {
-  font-size: var(--lg);
-  width: 50%;
+  font-size: var(--xl);
+  text-align: right;
+  line-height: 1.75rem;
+}
+
+#explore h1 {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+#explore .content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+#explore .content .text {
+  position: relative;
+  padding-right: 1.5rem;
+  display: flex;
+}
+
+#explore .images img {
+  aspect-ratio: 5/6;
+  object-fit: cover;
+  width: 100%;
+}
+
+#explore .images {
+  display: grid;
+  grid-template-columns: repeat(2, 14rem);
+  gap: 1rem;
+}
+
+#creating-a-brighter-future {
+  padding: 5rem 5% 15rem;
+  position: relative;
+  z-index: 1;
 }
 
 #creating-a-brighter-future p {
   font-size: var(--lg);
   text-align: center;
+  line-height: 1.75rem;
 }
 
 #creating-a-brighter-future h1 {
@@ -500,11 +571,14 @@ main h2 {
 
 .card .content h3 {
   font-size: var(--lg);
+  line-height: 1.75rem;
   /* margin-bottom: 0.5rem; */
 }
 
 .card .content p {
   margin-top: 0.5rem;
+  line-height: 1.5rem;
+  font-size: var(--nm);
 }
 
 .card .content a {
@@ -578,11 +652,13 @@ footer {
 #before-footer p {
   font-size: var(--2xl);
   width: 50%;
+  line-height: 2rem;
 }
 
 #before-footer h2 {
   font-size: var(--5xl);
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 footer .footer-content {
@@ -657,7 +733,7 @@ footer .footer-content .details {
 #hero .header {
   display: block;
   text-align: left;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   padding: 0;
 }
 
@@ -689,6 +765,7 @@ footer .footer-content .details {
 
 #hero p {
   font-size: var(--2xl);
+  line-height: 2rem;
   width: 60%;
 }
 
@@ -723,6 +800,7 @@ footer .footer-content .details {
 
 .contact-text {
   font-size: var(--lg);
+  line-height: 1.75rem;
 }
 
 .contact-icon {
@@ -763,6 +841,116 @@ footer .footer-content .details {
   background-color: var(--yellow);
   width: 0.5rem;
   border-radius: 999px;
+}
+
+.line.right {
+  right: 0;
+  left: auto;
+}
+
+.strands-container {
+  background-color: var(--brown1);
+  z-index: 10;
+  position: relative;
+}
+
+.strands-container h2 {
+  color: white;
+}
+
+.strand {
+  display: flex;
+}
+
+#senior-high {
+  padding: 0;
+}
+
+#senior-high .strands {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.department img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+/* #senior-high .strand { */
+/*   box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px; */
+/* } */
+
+#senior-high .strand .text {
+  background-color: var(--brown2);
+  padding: 1rem;
+  height: 100%;
+}
+
+#senior-high .strand .content {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#senior-high .strand .text h3 {
+  color: white;
+  font-size: var(--lg);
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#senior-high .strand .text p {
+  color: var(--muted);
+  font-size: var(--nm);
+  line-height: 1.5rem;
+}
+
+#senior-high .strand .logo {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+}
+
+#senior-high .strand .logo img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 10rem;
+}
+
+#senior-high .strands .strand:nth-child(6n + 1) .logo,
+#senior-high .strands .strand:nth-child(6n + 5) .logo,
+#senior-high .strands .strand:nth-child(6n + 4) .logo {
+  background: linear-gradient(to left, var(--yellow), transparent);
+}
+
+#senior-high .strands .strand:nth-child(6n + 2) .logo,
+#senior-high .strands .strand:nth-child(6n + 3) .logo,
+#senior-high .strands .strand:nth-child(6n + 6) .logo {
+  background: linear-gradient(to left, var(--orange), transparent);
+}
+
+#senior-high .strand .icons {
+  background-color: var(--brown0);
+  color: white;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#senior-high .strand .icons svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#senior-high .objectives,
+#senior-high .strands-container,
+#senior-high .department {
+  padding: 5rem 5%;
 }
 
 /* Animations */
