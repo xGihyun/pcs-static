@@ -51,6 +51,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: merriweather-black;
+  src: url("../fonts/merriweather/Merriweather-Black.ttf");
+  font-display: swap;
+}
+
 h1,
 h2,
 h3,
@@ -735,6 +741,10 @@ footer .footer-content .details {
   text-align: left;
   margin-bottom: 10rem;
   padding: 0;
+}
+
+#hero .header h1 span {
+  font-family: merriweather-bold;
 }
 
 #hero img {
